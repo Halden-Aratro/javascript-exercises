@@ -1,4 +1,13 @@
-const sumAll = function() {
+const sumAll = function(min, max) {
+    const ARRAY = [];
+    let numValue = min;
+    let total = min;
+
+    for (i = 0; i < max; i++) {
+        ARRAY += [i];
+    }
+    
+    min < 0 || max < 0 ? return;
 
 };
 
