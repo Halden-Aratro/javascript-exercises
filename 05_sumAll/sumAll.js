@@ -1,15 +1,23 @@
-const sumAll = function(min, max) {
-    const ARRAY = [];
-    let numValue = min;
-    let total = min;
-
-    for (i = 0; i < max; i++) {
-        ARRAY += [i];
+const sumAll = function(a, b) {
+    let i = 0;
+    let max = 0;
+    if (a > b) {
+        max = a;
+        i = b;
+    } else {
+        max = b;
+        i = a;
     }
-    
-    min < 0 || max < 0 ? return;
+    console.log(b)
+    let total = i;
+    for (i; i < max; i++) {
+        total += i+1;
+        console.log(total);
+    }
+    return total;
+}
 
-};
+console.log(sumAll(123,1));
 
 // Do not edit below this line
 module.exports = sumAll;
